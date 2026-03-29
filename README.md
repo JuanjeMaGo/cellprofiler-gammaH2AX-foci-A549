@@ -1,5 +1,3 @@
-# cellprofiler-gammaH2AX-foci-A549
-CellProfiler pipeline to quantify nuclear γ-H2AX foci in A549 cells after ionizing radiation.
 # CellProfiler γ-H2AX Foci Detection Pipeline
 
 Pipeline developed in CellProfiler for the analysis of H2AX immunofluorescence images in A549 cells.
@@ -17,82 +15,66 @@ It separates DAPI and H2AX channels, identifies nuclei and γ-H2AX foci, filters
 
 ## Folder structure
 
-The pipeline expects images organized like this:
-
-```text
 Inmuno_A549_Duber_IR_H2AX_7425/
 ├── Placa_control/
-│   ├── Control/
-│   │   ├── 1.tif
-│   │   ├── 2.tif
-│   │   └── ...
-│   └── Dubermatinib/
+│ ├── Control/
+│ │ ├── 1.tif
+│ │ ├── 2.tif
+│ │ └── ...
+│ └── Dubermatinib/
 ├── Placa_30min_post_IR_10_Gy/
-│   ├── Control/
-│   └── Dubermatinib/
+│ ├── Control/
+│ └── Dubermatinib/
 └── Placa_4h_post_IR_10_Gy/
-    ├── Control/
-    └── Dubermatinib/
+├── Control/
+└── Dubermatinib/
+
+text
 
 ## Main modules
-Images
 
-Metadata
-
-NamesAndTypes
-
-Groups
-
-ColorToGray
-
-IdentifyPrimaryObjects
-
-MeasureObjectSizeShape
-
-FilterObjects
-
-RelateObjects
-
-MeasureObjectIntensity
-
-ExportToSpreadsheet
+- Images
+- Metadata
+- NamesAndTypes
+- Groups
+- ColorToGray
+- IdentifyPrimaryObjects
+- MeasureObjectSizeShape
+- FilterObjects
+- MeasureObjectIntensity
+- ExportToSpreadsheet
 
 ## How to use
-Place your TIFF images in the expected folder hierarchy.
 
-Open the .cppipe file in CellProfiler.
-
-Check that the metadata rules match your folder names.
-
-Verify the object size and intensity thresholds for your images.
-
-Run the pipeline.
-
-Export the results and analyze them in Excel, Python, or R.
+1. Place your TIFF images in the expected folder hierarchy.
+2. Open the `.cppipe` file in CellProfiler.
+3. Check that the metadata rules match your folder names.
+4. Verify the object size and intensity thresholds for your images.
+5. Run the pipeline.
+6. Export the results and analyze them in Excel, Python, or R.
 
 ## Technical specifications
-Designed for:
 
-Magnification: 40X
-
-Microscope: Zeiss Apotome epifluorescence microscope
-
-Cell line: A549
-
-Channels: DAPI (nuclei, blue), γ-H2AX (green)
+**Designed for:**
+- **Magnification:** 40X
+- **Microscope:** Zeiss Apotome epifluorescence microscope
+- **Cell line:** A549
+- **Channels:** DAPI (nuclei, blue), γ-H2AX (green)
 
 ## Notes
-Diameter thresholds (nuclei: 50-100px, foci: 1-20px) and intensity threshold (0.06) optimized for 40X Zeiss Apotome images.
 
-If you change microscope magnification, exposure, or image quality, you may need to re-tune the pipeline.
-
-The metadata extraction step is optional, but it makes downstream tabulation easier.
+- Diameter thresholds (nuclei: 50-100px, foci: 1-20px) and intensity threshold (0.06) optimized for 40X Zeiss Apotome images.
+- If you change microscope magnification, exposure, or image quality, you may need to re-tune the pipeline.
+- The metadata extraction step is optional, but it makes downstream tabulation easier.
 
 ## Output
+
 The pipeline produces measurements for nuclei and γ-H2AX foci, including object counts, object properties, and metadata-linked results that can be used for statistical analysis.
 
 ## Author
+
 Juan Jesús Martínez Gómez
 
-##License
+## License
+
 Licensed under the MIT License.
