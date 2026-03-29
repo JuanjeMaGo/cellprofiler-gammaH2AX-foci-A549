@@ -40,6 +40,7 @@ Inmuno_A549_Duber_IR_H2AX_7425/
 - IdentifyPrimaryObjects
 - MeasureObjectSizeShape
 - FilterObjects
+- RelateObjects
 - MeasureObjectIntensity
 - ExportToSpreadsheet
 
