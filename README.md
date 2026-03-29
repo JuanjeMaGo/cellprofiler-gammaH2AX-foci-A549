@@ -47,7 +47,7 @@ Inmuno_A549_Duber_IR_H2AX_7425/
 ## How to use
 
 1. Place your TIFF images in the expected folder hierarchy.
-2. Open the `.cppipe` file in CellProfiler.
+2. Open the `.cpproj` file in CellProfiler.
 3. Check that the metadata rules match your folder names.
 4. Verify the object size and intensity thresholds for your images.
 5. Run the pipeline.
