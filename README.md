@@ -33,7 +33,8 @@ Inmuno_A549_Duber_IR_H2AX_7425/
 └── Placa_4h_post_IR_10_Gy/
     ├── Control/
     └── Dubermatinib/
-Main modules
+
+## Main modules
 Images
 
 Metadata
@@ -56,7 +57,7 @@ MeasureObjectIntensity
 
 ExportToSpreadsheet
 
-How to use
+## How to use
 Place your TIFF images in the expected folder hierarchy.
 
 Open the .cppipe file in CellProfiler.
@@ -69,7 +70,7 @@ Run the pipeline.
 
 Export the results and analyze them in Excel, Python, or R.
 
-Technical specifications
+## Technical specifications
 Designed for:
 
 Magnification: 40X
@@ -80,18 +81,18 @@ Cell line: A549
 
 Channels: DAPI (nuclei, blue), γ-H2AX (green)
 
-Notes
+## Notes
 Diameter thresholds (nuclei: 50-100px, foci: 1-20px) and intensity threshold (0.06) optimized for 40X Zeiss Apotome images.
 
 If you change microscope magnification, exposure, or image quality, you may need to re-tune the pipeline.
 
 The metadata extraction step is optional, but it makes downstream tabulation easier.
 
-Output
+## Output
 The pipeline produces measurements for nuclei and γ-H2AX foci, including object counts, object properties, and metadata-linked results that can be used for statistical analysis.
 
-Author
+## Author
 Juan Jesús Martínez Gómez
 
-License
+##License
 Licensed under the MIT License.
