@@ -29,8 +29,6 @@ Inmuno_A549_Duber_IR_H2AX_7425/
 ├── Control/
 └── Dubermatinib/
 
-text
-
 ## Main modules
 
 - Images
