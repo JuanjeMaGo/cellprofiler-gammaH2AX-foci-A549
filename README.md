@@ -16,19 +16,19 @@ It separates DAPI and H2AX channels, identifies nuclei and γ-H2AX foci, filters
 ## Folder structure
 
 ```text
-Inmuno_A549_Duber_IR_H2AX_7425/
+Inmuno_A549_Drug_IR_H2AX_7425/
 ├── Placa_control/
 │   ├── Control/
 │   │   ├── 1.tif
 │   │   ├── 2.tif
 │   │   └── ...
-│   └── Dubermatinib/
+│   └── Drug/
 ├── Placa_30min_post_IR_10_Gy/
 │   ├── Control/
-│   └── Dubermatinib/
+│   └── Drug/
 └── Placa_4h_post_IR_10_Gy/
     ├── Control/
-    └── Dubermatinib/
+    └── Drug/
 ```
 ## Main modules
 
